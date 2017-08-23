@@ -1,0 +1,23 @@
+{
+  "name": "cv",
+  "description": "cv",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+  ],
+  "authors": [
+    "Vitaliy Zbryzskiy"
+  ],
+  "license": "no license",
+  "homepage": "https://github.com/Zimbo0397/vitaliy_zbryzskiy.github.io.git",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}

@@ -1,0 +1,199 @@
+$mobile-width: 800px
+
+html
+	font-size: 20px
+	@media (min-width: 2000px)
+		font-size: 40px
+	@media (max-width: $mobile-width)
+		font-size: 16px
+	@media print
+		font-size: 12pt
+
+body
+	font: 1rem/1.6em Helvetica, Arial, sans-serif
+	color: #939393
+	text-align: center
+	// &::-webkit-scrollbar
+
+h1
+	color: #565656
+	font-size: 2.8rem
+	line-height: 1.2em
+	@media (max-width: $mobile-width)
+		font-size: 2rem
+
+h2
+	text-transform: uppercase
+	position: relative
+	color: #000
+	margin: 2em 0
+	font-size: 1.6em
+	text-shadow: 4px 0 0 #fff, -4px 0 0 #fff, 0 4px 0 #fff, 0 -4px 0 #fff, 2px 2px #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff;
+	@media (max-width: $mobile-width)
+		margin: 2em 0 1em
+	&:before,
+	&:after
+		content: ''
+		top: 50%
+		position: absolute
+		border: 1px solid #d4d2d1
+		z-index: -1
+		@media (max-width: $mobile-width)
+			content: none
+	&:after
+		left: 0
+		right: 60%
+		right: calc(50% + 200px)
+	&:before
+		right: 0
+		left: 60%
+		left: calc(50% + 200px)
+
+h3
+	color: #565656
+	text-transform: uppercase
+	a
+		color: inherit
+		font-size: inherit
+		font-weight: inherit
+
+p, ul, h3, h4
+	text-align: left
+p
+	margin: 1rem 0
+ul
+	padding: 0
+li
+	display: inline-block
+	vertical-align: top
+a
+	&:hover
+		opacity: 0.6
+	@media print
+		text-decoration: none
+
+section
+	margin: 5rem auto
+	position: relative
+	width: 80%
+	@media (max-width: $mobile-width)
+		width: 100%
+		width: calc(100% - 2rem)
+
+.projects
+	li
+		display: block
+//----------------------------------
+// INTRODUCTION
+//----------------------------------
+.introduction
+	img
+		border: 4px solid #d4d2d1
+		border-radius: 50%
+		height: 14rem
+		width: 14rem
+		@media (max-width: $mobile-width)
+			height: 15.6rem
+			width: 15.6rem
+	h1
+		margin-bottom: 0
+	h4
+		text-align: center
+		margin: 0 0 3em
+		font-weight: normal
+	ul
+		text-align: center
+		@media (max-width: $mobile-width)
+			text-align: left
+	li
+		color: #6b6b6b
+		margin: 0 0.3em
+		@media (max-width: $mobile-width)
+			display: block
+			margin-bottom: 0.6em
+		&:first-child
+			display: block
+	strong
+		text-transform: uppercase
+	a
+		color: inherit
+//----------------------------------
+// END INTRODUCTION
+//----------------------------------
+
+//----------------------------------
+// SKILLS
+//----------------------------------
+.skills
+	li
+		color: #565656
+		text-transform: uppercase
+		margin-right: 0.5em
+		font-weight: bold
+		&:after
+			content: ';'
+
+//----------------------------------
+// END SKILLS
+//----------------------------------
+
+//----------------------------------
+// EXPERIENCE
+//----------------------------------
+.experience
+	li
+		width: 49%
+		box-sizing: border-box
+		@media (min-width: $mobile-width)
+			&:nth-child(odd)
+				padding-right: 0.6em
+			&:nth-child(even)
+				padding-left: 0.6em
+		@media (max-width: $mobile-width)
+			width: 100%
+
+//----------------------------------
+// END EXPERIENCE
+//----------------------------------
+
+//----------------------------------
+// PROJECTS
+//----------------------------------
+$linkContent: " [ " attr(href) " ] "
+.projects
+	@media print
+		a
+			text-decoration: none
+			&:link:after, &:visited:after
+				color: #000
+				text-transform: lowercase
+				content: $linkContent
+				font-size: 0.8em
+
+//----------------------------------
+// END PROJECTS
+//----------------------------------
+
+//----------------------------------
+// SOCIALS
+//----------------------------------
+.socials
+	li
+		margin: 0 1rem 1rem 0
+		img
+			height: 2rem
+	@media print
+		a
+			text-decoration: none
+			&:link:after, &:visited:after
+				color: #000
+				text-transform: lowercase
+				content: $linkContent
+				font-size: 0.8em
+				padding-left: .8em
+				top: -0.6em
+				position: relative
+
+//----------------------------------
+// END SOCIALS
+//----------------------------------
